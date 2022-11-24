@@ -1,3 +1,22 @@
-
-export const headerHome = require('./bg-home-header.jpeg');
-export const header = require('./header.png');
+export const headerHome = require("./bg-home-header.jpeg");
+export const header = require("./header.png");
+export const logo = require("./logo.png");
+export const brands = require("./Brands-for-good-crop.png");
+export const asset13 = require("./Asset13.png");
+export const imgCout = require("./img-cont.jpg");
+export const asset31 = require("./Asset31.png");
+export const collaboration = require("./collaboration.png");
+export const destination = require("./destination.png");
+export const target = require("./target.png");
+export const team = require("./team.png");
+export const imageLady = require("./imageLady.jpeg");
+export const brands2 = require("./brands.png");
+export const asset14 = require("./Asset14.png");
+export const asset15 = require("./Asset15.png");
+export const asset16 = require("./Asset16.png");
+export const asset17 = require("./Asset17.png");
+export const asset18 = require("./Asset18.png");
+export const asset19 = require("./Asset19.png");
+export const asset20 = require("./Asset20.png");
+export const asset21 = require("./Asset21.png");
+export const asset22 = require("./Asset22.png");
