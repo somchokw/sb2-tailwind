@@ -26,6 +26,40 @@ import {
   asset20,
   asset21,
   asset22,
+  AkiraMitsumasu,
+  AndrewWinston,
+  AndyWilson,
+  JennyAndersson,
+  KyungKonKo,
+  MarcBuckley,
+  MartinRich,
+  ThomasKloster,
+  eyArtboard,
+  gclogo,
+  pttlogo,
+  BA,
+  BangchakGold,
+  BB,
+  BETAGROGold,
+  Data,
+  DoikhamSilver2,
+  Doinpng,
+  Intagepng,
+  Krungthaipng,
+  Lgs,
+  MaliGold,
+  Ogipng,
+  SCGSilver,
+  SD,
+  SETGold,
+  ThailandSilver2,
+  TS,
+  TVDSilver,
+  WHAGroup,
+  asset8,
+  asset9,
+  asset10,
+  asset131,
 } from "../../static/images";
 
 export const Home = () => {
@@ -42,6 +76,28 @@ export const Home = () => {
 
           <p className="text-white text-xl font-bold mb-3 ">{header}</p>
           <p className="text-white">{detail}</p>
+        </div>
+      </div>
+    );
+  };
+
+  const renderAvatar = (
+    avatar: any,
+    name: string,
+    position1: string,
+    position2: string,
+    position3: string
+  ) => {
+    return (
+      <div className="text-center flex flex-col items-center px-4 ">
+        <div>
+          <img src={avatar} width="180px" />
+        </div>
+        <div>
+          <h1 className="text-xl font-bold mb-3">{name}</h1>
+          <p className="text-xs">{position1}</p>
+          <p className="text-xs">{position2}</p>
+          {position3 ? <p className="text-xs">{position3}</p> : null}
         </div>
       </div>
     );
@@ -369,7 +425,82 @@ export const Home = () => {
             <div className="border-b-1px my-1 w-1/2 border-green "></div>
           </div>
           <div className="my-12">
-            <div>avatar</div>
+            <div className="flex flex-row mt-4 ">
+              <div className="w-1/4">
+                {renderAvatar(
+                  AkiraMitsumasu,
+                  "Akira Mitsumasu",
+                  "Vice President, Global CX & Marketing, CX,",
+                  "Data Analytics & Marketing",
+                  "Japan Airlines"
+                )}
+              </div>
+              <div className="w-1/4">
+                {renderAvatar(
+                  AndrewWinston,
+                  "Andrew Winston",
+                  "Manager",
+                  "Winston Eco-Strategies, LLC, The Author",
+                  "of “Net Positive”"
+                )}
+              </div>
+              <div className="w-1/4">
+                {renderAvatar(
+                  AndyWilson,
+                  "Andy Wilson",
+                  "Senior Partner",
+                  "Ogilvy",
+                  ""
+                )}
+              </div>
+              <div className="w-1/4">
+                {renderAvatar(
+                  JennyAndersson,
+                  "Jenny Andersson",
+                  "Co-Founder",
+                  "Really Regenerative CIC",
+                  ""
+                )}
+              </div>
+            </div>
+            <div className="flex flex-row mt-4 ">
+              <div className="w-1/4">
+                {renderAvatar(
+                  KyungKonKo,
+                  "Kyung-Kon Ko",
+                  "President & CEO",
+                  "Daejeon Tourism Organization (DJTO)",
+                  ""
+                )}
+              </div>
+              <div className="w-1/4">
+                {renderAvatar(
+                  MarcBuckley,
+                  "Marc Buckley",
+                  "System Thinker, Dynamic System Modeler",
+                  "and Blue Economy Developer",
+                  "Marc Buckley Earth”"
+                )}
+              </div>
+              <div className="w-1/4">
+                {renderAvatar(
+                  MartinRich,
+                  "Martin Rich",
+                  "Co-Founder & Executive Director",
+                  "Future-Fit Foundation",
+                  ""
+                )}
+              </div>
+              <div className="w-1/4">
+                {renderAvatar(
+                  ThomasKloster,
+                  "Thomas Kolster",
+                  "Speaker, Author, Marketing Activist and",
+                  "Purpose Pioneer",
+                  "Goodvertising"
+                )}
+              </div>
+            </div>
             <div className="mt-6 text-center ">
               <button className="text-28px font-bold bg-green text-white rounded-37px text-center w-420px h-65px ">
                 SEE MORE SPEAKERS
@@ -383,38 +514,112 @@ export const Home = () => {
             <div className="flex flex-col items-center mt-6 ">
               <h1 className="font-semibold text-green text-3xl ">PLATINUM</h1>
               <div className="my-1 border-b-1px border-green w-1/4 "></div>
-              <div className="mt-12">brand</div>
+              <div className="mt-12 flex flex-row justify-center ">
+                <div className="w-1/3 px-4">
+                  <img src={eyArtboard} />
+                </div>
+                <div className="w-1/3 px-4">
+                  <img src={gclogo} />
+                </div>
+                <div className="w-1/3 px-4">
+                  <img src={pttlogo} />
+                </div>
+              </div>
             </div>
             <div className="flex flex-col items-center mt-6 ">
               <h1 className="font-semibold text-green text-3xl ">GOLD</h1>
               <div className="my-1 border-b-1px border-green w-1/4 "></div>
-              <div className="mt-12">brand</div>
+              <div className="mt-12 flex flex-row justify-center">
+                <div className="w-1/4 px-4">
+                  <img src={BangchakGold} />
+                </div>
+                <div className="w-1/4 px-4">
+                  <img src={BETAGROGold} />
+                </div>
+                <div className="w-1/4 px-4 ">
+                  <img src={MaliGold} />
+                </div>
+                <div className="w-1/4 px-4">
+                  <img src={SETGold} />
+                </div>
+              </div>
             </div>
             <div className="flex flex-col items-center mt-6 ">
               <h1 className="font-semibold text-green text-3xl ">SILVER</h1>
               <div className="my-1 border-b-1px border-green w-1/4 "></div>
-              <div className="mt-12">brand</div>
+              <div className="mt-12 flex flex-row justify-center">
+                <div className="w-1/6 px-4">
+                  <img src={ThailandSilver2} />
+                </div>
+                <div className="w-1/6 px-4">
+                  <img src={DoikhamSilver2} />
+                </div>
+                <div className="w-1/6 px-4">
+                  <img src={Krungthaipng} />
+                </div>
+                <div className="w-1/6 px-4">
+                  <img src={SCGSilver} />
+                </div>
+                <div className="w-1/6 px-4">
+                  <img src={TVDSilver} />
+                </div>
+                <div className="w-1/6 px-4">
+                  <img src={WHAGroup} />
+                </div>
+              </div>
             </div>
             <div className="flex flex-col items-center mt-12 ">
               <h1 className="font-semibold text-lightPink text-3xl ">
                 KNOWLEDGE PARTNERS
               </h1>
               <div className="my-1 border-b-1px border-lightPink w-1/4 "></div>
-              <div className="mt-12">brand</div>
+              <div className="mt-12 flex flex-row justify-center">
+                <div className="w-1/4 px-4">
+                  <img src={Ogipng} />
+                </div>
+                <div className="w-1/4 px-4">
+                  <img src={Intagepng} />
+                </div>
+                <div className="w-1/4 px-4">
+                  <img src={Data} />
+                </div>
+                <div className="w-1/4 px-4">
+                  <img src={Lgs} />
+                </div>
+              </div>
+              <div className="mt-12 flex flex-row justify-center">
+                <div className="w-1/4 px-4">
+                  <img src={Doinpng} />
+                </div>
+                <div className="w-1/4 px-4">
+                  <img src={BB} />
+                </div>
+              </div>
             </div>
             <div className="flex flex-col items-center mt-6 ">
               <h1 className="font-semibold text-lightPink text-3xl ">
                 TECHNOLOGY PARTNER
               </h1>
               <div className="my-1 border-b-1px border-lightPink w-1/4 "></div>
-              <div className="mt-12">brand</div>
+              <div className="mt-12 flex flex-row justify-center">
+                <div className="w-1/4 px-4">
+                  <img src={TS} />
+                </div>
+              </div>
             </div>
             <div className="flex flex-col items-center mt-6 ">
               <h1 className="font-semibold text-lightPink text-3xl ">
                 MEDIA PARTNERS
               </h1>
               <div className="my-1 border-b-1px border-lightPink w-1/4 "></div>
-              <div className="mt-12">brand</div>
+              <div className="mt-12 flex flex-row justify-center">
+                <div className="w-1/4 px-4">
+                  <img src={BA} />
+                </div>
+                <div className="w-1/4 px-4">
+                  <img src={SD} />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -428,8 +633,29 @@ export const Home = () => {
                 Is organized through the collaboration of
               </h1>
             </div>
-            <div className="mt-12">
-              <div>person</div>
+            <div className="mt-12 flex flex-row justify-center w-2/3 ">
+              <div className="w-1/4 px-4 text-center ">
+                <img src={asset8} />
+                <p className="mt-4 text-xs text-white">
+                  seoul@sustainablebrands.kr
+                </p>
+              </div>
+              <div className="w-1/4 px-4 text-center">
+                <img src={asset9} />
+                <p className="mt-4 text-xs text-white">
+                  sb-asiapacific@sustainablebrands.jp
+                </p>
+              </div>
+              <div className="w-1/4 px-4 text-center ">
+                <img src={asset10} />
+                <p className="mt-4 text-xs text-white">sofia@acaciablue.com</p>
+              </div>
+              <div className="w-1/4 px-4 text-center">
+                <img src={asset131} />
+                <p className="mt-4 text-xs text-white">
+                  Infosbthailand@beingsustain.com
+                </p>
+              </div>
             </div>
           </div>
         </div>
