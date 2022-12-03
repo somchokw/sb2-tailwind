@@ -55,7 +55,7 @@ export const Navbar: React.FC<{}> = () => {
       <div className="navbar-header-md">
         <div className="navbar-container">
           <div className="logo-container">
-            <img width={300} src={logo} alt="logo" />
+            <img src={logo} alt="logo" />
           </div>
           <div className="navbar-content">
             <div className="navbar-header-top">
