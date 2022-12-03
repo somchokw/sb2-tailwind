@@ -563,13 +563,19 @@ export const Home = () => {
               <div className="my-1 border-b-1px border-green w-1/4 "></div>
               <div className="mt-12 flex flex-row justify-center ">
                 <div className="w-1/3 px-4">
-                  <img src={eyArtboard} />
+                  <a href="https://www.ey.com/en_gl">
+                    <img src={eyArtboard} />
+                  </a>
                 </div>
                 <div className="w-1/3 px-4">
-                  <img src={gclogo} />
+                  <a href="https://www.pttgcgroup.com/th/home">
+                    <img src={gclogo} />
+                  </a>
                 </div>
                 <div className="w-1/3 px-4">
-                  <img src={pttlogo} />
+                  <a href="https://www.pttep.com/en/Home.aspx">
+                    <img src={pttlogo} />
+                  </a>
                 </div>
               </div>
             </div>
@@ -596,7 +602,9 @@ export const Home = () => {
               <div className="my-1 border-b-1px border-green w-1/4 "></div>
               <div className="mt-12 flex flex-row justify-center">
                 <div className="w-1/6 px-4">
-                  <img src={ThailandSilver2} />
+                  <a href="https://www.tourismthailand.org/home">
+                    <img src={ThailandSilver2} />
+                  </a>
                 </div>
                 <div className="w-1/6 px-4">
                   <img src={DoikhamSilver2} />
