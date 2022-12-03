@@ -69,16 +69,44 @@ export const Home = () => {
     header: string,
     picture: any
   ) => {
-    return (
-      <div className={`bg-${color} px-5% pt-5% h-360px rounded-30px`}>
-        <div className="flex flex-col items-center text-center ">
-          <img src={picture} width="130px" />
+    switch (color) {
+      case "lightGreen":
+        return (
+          <div className={`bg-lightGreen px-5% pt-5% h-360px rounded-30px`}>
+            <div className="flex flex-col items-center text-center ">
+              <img src={picture} width="130px" />
 
-          <p className="text-white text-xl font-bold mb-3 ">{header}</p>
-          <p className="text-white">{detail}</p>
-        </div>
-      </div>
-    );
+              <p className="text-white text-xl font-bold mb-3 ">{header}</p>
+              <p className="text-white">{detail}</p>
+            </div>
+          </div>
+        );
+      case "lightPink":
+        return (
+          <div className={`bg-lightPink px-5% pt-5% h-360px rounded-30px`}>
+            <div className="flex flex-col items-center text-center ">
+              <img src={picture} width="130px" />
+
+              <p className="text-white text-xl font-bold mb-3 ">{header}</p>
+              <p className="text-white">{detail}</p>
+            </div>
+          </div>
+        );
+      case "blue":
+        return (
+          <div className={`bg-blue px-5% pt-5% h-360px rounded-30px`}>
+            <div className="flex flex-col items-center text-center ">
+              <img src={picture} width="130px" />
+
+              <p className="text-white text-xl font-bold mb-3 ">{header}</p>
+              <p className="text-white">{detail}</p>
+            </div>
+          </div>
+        );
+
+      default:
+        break;
+    }
   };
 
   const renderAvatar = (
