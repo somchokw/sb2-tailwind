@@ -5,7 +5,7 @@ import { Navbar } from "../components";
 export const Layout = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="content-layout">
         <Outlet />
       </div>
