@@ -27,6 +27,7 @@ module.exports = {
       gray: "#8492a6",
       grey: "#676767",
       "gray-light": "#d3dce6",
+      "border-grey": "#39454f",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
@@ -54,6 +55,8 @@ module.exports = {
         "18px": "18px",
         "54px": "54px",
         "4.5xl": "2.5rem",
+        "2.5xl": "1.75rem",
+        l: "1rem",
       },
       width: {
         "420px": "420px",
