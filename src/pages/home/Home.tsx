@@ -234,12 +234,12 @@ export const Home = () => {
       </div>
       <div className="flex flex-col items-center mt-5">
         <div className="w-2/3 py-5">
-          <div className="flex flex-row items-start">
+          <div className="flex flex-row items-start mb-2 ">
             <div className="w-1/6 px-4">
               <img src={destination} />
             </div>
             <div className="w-5/6">
-              <p className="text-2xl font-medium">
+              <p className="text-2xl font-medium indent-6">
                 This is our proprietary tool to support brands to continue their
                 sustainability journeys. In a nutshell, it is the unique
                 self-assessment tool that maps out the whole journey of
@@ -249,24 +249,24 @@ export const Home = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-row items-start">
+          <div className="flex flex-row items-start mb-2">
             <div className="w-1/6 px-4">
               <img src={team} />
             </div>
             <div className="w-5/6">
-              <p className="text-2xl font-medium">
+              <p className="text-2xl font-medium indent-6">
                 It illustrates where a company is on the journey and guides the
                 C-Suite with practical next steps as well as recommending
                 resources and partners.
               </p>
             </div>
           </div>
-          <div className="flex flex-row items-start">
+          <div className="flex flex-row items-start mb-2">
             <div className="w-1/6 px-4">
               <img src={collaboration} />
             </div>
             <div className="w-5/6">
-              <p className="text-2xl font-medium">
+              <p className="text-2xl font-medium indent-6">
                 It helps engage and unite different parts of the company around
                 a common purpose, set appropriate goals and priorities in all
                 departments, and locate top-notch external collaborators to
@@ -279,7 +279,7 @@ export const Home = () => {
               <img src={target} />
             </div>
             <div className="w-5/6">
-              <p className="text-2xl font-medium">
+              <p className="text-2xl font-medium indent-6">
                 In the sustainability journey, we have no time to spare getting
                 lost with the crisis getting closer and closer. Take action now
                 with strategic roadmap & strong network
@@ -455,82 +455,101 @@ export const Home = () => {
           <div className="my-12">
             <div className="flex flex-row mt-4 ">
               <div className="w-1/4">
-                {renderAvatar(
-                  AkiraMitsumasu,
-                  "Akira Mitsumasu",
-                  "Vice President, Global CX & Marketing, CX,",
-                  "Data Analytics & Marketing",
-                  "Japan Airlines"
-                )}
+                <a href="/speaker/0">
+                  {renderAvatar(
+                    AkiraMitsumasu,
+                    "Akira Mitsumasu",
+                    "Vice President, Global CX & Marketing, CX,",
+                    "Data Analytics & Marketing",
+                    "Japan Airlines"
+                  )}
+                </a>
               </div>
               <div className="w-1/4">
-                {renderAvatar(
-                  AndrewWinston,
-                  "Andrew Winston",
-                  "Manager",
-                  "Winston Eco-Strategies, LLC, The Author",
-                  "of “Net Positive”"
-                )}
+                <a href="/speaker/1">
+                  {renderAvatar(
+                    AndrewWinston,
+                    "Andrew Winston",
+                    "Manager",
+                    "Winston Eco-Strategies, LLC, The Author",
+                    "of “Net Positive”"
+                  )}
+                </a>
               </div>
               <div className="w-1/4">
-                {renderAvatar(
-                  AndyWilson,
-                  "Andy Wilson",
-                  "Senior Partner",
-                  "Ogilvy",
-                  ""
-                )}
+                <a href="/speaker/2">
+                  {renderAvatar(
+                    AndyWilson,
+                    "Andy Wilson",
+                    "Senior Partner",
+                    "Ogilvy",
+                    ""
+                  )}
+                </a>
               </div>
               <div className="w-1/4">
-                {renderAvatar(
-                  JennyAndersson,
-                  "Jenny Andersson",
-                  "Co-Founder",
-                  "Really Regenerative CIC",
-                  ""
-                )}
+                <a href="/speaker/3">
+                  {renderAvatar(
+                    JennyAndersson,
+                    "Jenny Andersson",
+                    "Co-Founder",
+                    "Really Regenerative CIC",
+                    ""
+                  )}
+                </a>
               </div>
             </div>
             <div className="flex flex-row mt-4 ">
               <div className="w-1/4">
-                {renderAvatar(
-                  KyungKonKo,
-                  "Kyung-Kon Ko",
-                  "President & CEO",
-                  "Daejeon Tourism Organization (DJTO)",
-                  ""
-                )}
+                <a href="/speaker/4">
+                  {renderAvatar(
+                    KyungKonKo,
+                    "Kyung-Kon Ko",
+                    "President & CEO",
+                    "Daejeon Tourism Organization (DJTO)",
+                    ""
+                  )}
+                </a>
               </div>
               <div className="w-1/4">
-                {renderAvatar(
-                  MarcBuckley,
-                  "Marc Buckley",
-                  "System Thinker, Dynamic System Modeler",
-                  "and Blue Economy Developer",
-                  "Marc Buckley Earth”"
-                )}
+                <a href="/speaker/5">
+                  {renderAvatar(
+                    MarcBuckley,
+                    "Marc Buckley",
+                    "System Thinker, Dynamic System Modeler",
+                    "and Blue Economy Developer",
+                    "Marc Buckley Earth”"
+                  )}
+                </a>
               </div>
               <div className="w-1/4">
-                {renderAvatar(
-                  MartinRich,
-                  "Martin Rich",
-                  "Co-Founder & Executive Director",
-                  "Future-Fit Foundation",
-                  ""
-                )}
+                <a href="/speaker/6">
+                  {renderAvatar(
+                    MartinRich,
+                    "Martin Rich",
+                    "Co-Founder & Executive Director",
+                    "Future-Fit Foundation",
+                    ""
+                  )}
+                </a>
               </div>
               <div className="w-1/4">
-                {renderAvatar(
-                  ThomasKloster,
-                  "Thomas Kolster",
-                  "Speaker, Author, Marketing Activist and",
-                  "Purpose Pioneer",
-                  "Goodvertising"
-                )}
+                <a href="/speaker/7">
+                  {renderAvatar(
+                    ThomasKloster,
+                    "Thomas Kolster",
+                    "Speaker, Author, Marketing Activist and",
+                    "Purpose Pioneer",
+                    "Goodvertising"
+                  )}
+                </a>
               </div>
             </div>
-            <div className="mt-6 text-center ">
-              <button className="text-28px font-bold bg-green text-white rounded-37px text-center w-420px h-65px ">
+            <div className="mt-6 text-center">
+              <button
+                onClick={() => window.location.assign("/speaker")}
+                className="text-28px font-bold bg-green text-white rounded-37px text-center w-420px h-65px "
+              >
                 SEE MORE SPEAKERS
               </button>
             </div>
