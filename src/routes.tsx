@@ -1,6 +1,6 @@
 import { Home } from "./pages/home";
 import { Agenda } from "./pages/agenda";
-import { Speaker } from "./pages/speaker";
+import { Speaker, SpeakerSingle } from "./pages/speaker";
 import { Sponsor } from "./pages/sponsor";
 import Layout from "./pages/Layout";
 
@@ -20,6 +20,10 @@ export const routes = [
       {
         path: "/speaker",
         element: <Speaker />,
+      },
+      {
+        path: "/speaker/:id",
+        element: <SpeakerSingle />,
       },
       {
         path: "/sponsor",

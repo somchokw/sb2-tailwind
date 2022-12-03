@@ -11,9 +11,10 @@ export const Navbar: React.FC<{}> = () => {
   const ref = React.useRef() as any;
   const [isOpen, setIsOpen] = React.useState(false);
   useOnClickOutside(ref, () => setIsOpen(false));
-  console.log({ isOpen });
 
-  const paths = exportPaths(location.pathname);
+  const pathname = location.pathname.split("/");
+
+  const paths = exportPaths(pathname[1]);
 
   return (
     <div className="nav-header-content">
