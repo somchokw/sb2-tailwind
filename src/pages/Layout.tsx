@@ -9,6 +9,7 @@ export const Layout = () => {
       <div className="content-layout">
         <Outlet />
       </div>
+      {/* <div style={{ background: "black", width: "100%" }}> text</div> */}
     </>
   );
 };

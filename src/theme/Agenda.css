@@ -4,6 +4,9 @@
   height: 40px;
   border-radius: 30px;
 }
+.btn-text {
+  font-weight: 400;
+}
 
 .btn-agenda-active {
   background-color: #003454;
@@ -22,6 +25,12 @@
   border-radius: 30px;
 }
 
+.input-search-agenda::placeholder {
+  font-weight: 700;
+  color: #757575;
+  padding-left: 12px;
+}
+
 .agenda-container {
   background-color: rgb(247, 247, 247);
   padding-top: 2rem;
@@ -32,6 +41,9 @@
 
 .agenda-header-text {
   text-align: center;
+  font-size: 40px;
+  color: #397890;
+  font-weight: 700;
 }
 
 .agenda-search-engine {
@@ -69,10 +81,107 @@
 
 .row-avartar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  word-wrap: break-word;
+  word-wrap: break-all;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-left: 2rem;
+}
+
+.agenda-text {
+  font-size: 40px;
+  color: #397890;
+  font-weight: 700;
+}
+
+.agenda-text-label {
+  font-size: 32px;
+  color: #397890;
+  font-weight: 700;
+  line-height: 34px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+
+.agenda-text-day {
+  font-size: 40px;
+  color: #397890;
+  font-weight: 700;
+  line-height: 34px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+
+.agenda-text-time {
+  font-size: 18px;
+  color: #003454;
+}
+
+.agenda-text-content {
+  color: #397890;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.agenda-content-text-1 {
+  color: #397890;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.agenda-content-text-2 {
+  color: #397890;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.extra-content {
+  padding-left: 2rem;
+  padding-bottom: 20px;
 }
 
 li::marker {
+  color: #0056b3;
+}
+
+.hyperlink-agenda {
+  color: #007bff;
+}
+
+.hyperlink-agenda:hover {
   color: #397890;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .agenda-container {
+    padding: 1rem;
+  }
+  .agenda-engine-paginate {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .input-search-agenda {
+    width: 180px;
+  }
+
+  .agenda-header-text {
+    font-size: 30px;
+    padding-top: 2rem;
+  }
+  .agenda-text {
+    font-size: 30px;
+  }
+  .agenda-text-label {
+    font-size: 26px;
+  }
+
+  .extra-content {
+    padding-left: 1rem;
+  }
+  .row-avartar {
+    padding-left: 1rem;
+  }
 }

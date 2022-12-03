@@ -1,3 +1,36 @@
+import {
+  AkiraMitsumasu,
+  AndrewWinston,
+  AndyWilson,
+  DanielAronson,
+  DanielKrohn,
+  DarrenBeck,
+  DrDangjaithawinAnantachai,
+  DrSirikulLaukaikul,
+  GeraldMiranda,
+  GloytaNathalang,
+  JakkrinTaepaisitpong,
+  JennyAndersson,
+  KanitaTungwarapojwitan,
+  KeiichiUshijima,
+  KoAnnVikorenSkrzyniarz,
+  KulvechJanvatanavit,
+  KyungKonKo,
+  MarcBuckley,
+  MartinRich,
+  MichelleLim,
+  MinGuJun,
+  MohamedAdamWeeAbdullah,
+  NongchanokStananonth,
+  SakulthipKeeratiphanthawong,
+  SirikhanateSakulyong,
+  SongpolShanmatkit,
+  ThomasKloster,
+  VenusAsavasitthithavorn,
+  YKPark,
+  YukiMatsumoto,
+} from "../../static/images";
+
 export const exportAgendaData = (day: any, filterLabel: string) => {
   const data = [
     {
@@ -8,20 +41,20 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
       periodThird: "11.00 - 11.15 (Japan/Korea, UTC +9:00)",
       lecturers: [
         {
-          avartar: "",
+          avartar: DrSirikulLaukaikul,
           content: "Dr. Sirikul Laukaikul | Country Director - SB Thailand",
         },
         {
-          avartar: "",
+          avartar: YukiMatsumoto,
           content:
             "Yuki Matsumoto | International Council of SB Advisory Board Members - SB Japan",
         },
         {
-          avartar: "",
+          avartar: MinGuJun,
           content: "MinGu Jun | Country Director - SB Korea",
         },
         {
-          avartar: "",
+          avartar: GeraldMiranda,
           content: "Gerald Miranda | Country Director - SB Malaysia",
         },
       ],
@@ -34,7 +67,7 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
       periodThird: "11.15 - 11.30 (Japan/Korea, UTC +9:00)",
       lecturers: [
         {
-          avartar: "",
+          avartar: KoAnnVikorenSkrzyniarz,
           content: "KoAnn Vikoren Skrzyniarz | Founder & CEO - SB Worldwide",
         },
       ],
@@ -47,7 +80,7 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
       periodThird: "11.30 - 11.50 (Japan/Korea, UTC +9:00)",
       lecturers: [
         {
-          avartar: "",
+          avartar: MartinRich,
           content:
             "Martin Rich | Co-Founder & Executive Director - Future-Fit Foundation",
         },
@@ -61,7 +94,7 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
       periodThird: "11.50 - 12.10 (Japan/Korea, UTC +9:00)",
       lecturers: [
         {
-          avartar: "",
+          avartar: AndyWilson,
           content: "Andy Wilson | Senior Partner - Ogilvy",
         },
       ],
@@ -82,7 +115,7 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
       periodThird: "12.40 - 13.00 (Japan/Korea, UTC +9:00)",
       lecturers: [
         {
-          avartar: "",
+          avartar: KeiichiUshijima,
           content:
             "Keiichi Ushijima | Partner, Japan CCaSS Leader, Climate Change and Sustainability Services (CCaSS) - EY",
         },
@@ -97,7 +130,7 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
       periodThird: "13.00 - 13.20 (Japan/Korea, UTC +9:00)",
       lecturers: [
         {
-          avartar: "",
+          avartar: AndrewWinston,
           content:
             "Andrew Winston | Manager - Winston Eco-Strategies, LLC, The Author of “Net Positive”",
         },
@@ -111,24 +144,24 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
       periodThird: "13.20 - 14.00 (Japan/Korea, UTC +9:00)",
       lecturers: [
         {
-          avartar: "",
+          avartar: KulvechJanvatanavit,
           content:
             "Kulvech Janvatanavit | CEO - Thai Institute of Directors Association (IOD)",
         },
         {
-          avartar: "",
+          avartar: YKPark,
           content:
             "Yoo-Kyung (YK) Park | Head of APAC Responsible Investment & Governance - APG Asset Management",
         },
         {
-          avartar: "",
+          avartar: MichelleLim,
           content:
             "Michele Kythe Lim | President & CEO - Institute of Corporate Directors Malaysia (ICDM)",
         },
       ],
       moderatedBy: [
         {
-          avartar: "",
+          avartar: SakulthipKeeratiphanthawong,
           content:
             "Sakulthip Kiratiphantawong | Executive Director - B Corp Thailand",
         },
@@ -150,7 +183,7 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
       periodThird: "15.00 - 15.15 (Japan/Korea, UTC +9:00)",
       lecturers: [
         {
-          avartar: "",
+          avartar: DanielKrohn,
           content:
             "Daniel Krohn | International & Brand Transformation Consultant - SB Worldwide",
         },
@@ -164,7 +197,7 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
       periodThird: "15.15 - 15.35 (Japan/Korea, UTC +9:00)",
       lecturers: [
         {
-          avartar: "",
+          avartar: DrDangjaithawinAnantachai,
           content:
             "Dr. Dangjaithawin Anantachai | Managing Director & COO - INTAGE Thailand, SB Thailand",
         },
@@ -178,7 +211,7 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
       periodThird: "",
       lecturers: [
         {
-          avartar: "",
+          avartar: DanielAronson,
           content:
             "Daniel Aronson | Founder - Valutus, The Author of “The Value of Values”",
         },
@@ -193,29 +226,29 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
       periodThird: "",
       lecturers: [
         {
-          avartar: "",
+          avartar: VenusAsavasitthithavorn,
           content:
             "Venus Asavasitthithavorn | Director, Enterprise Brand Management Office - SCG",
         },
         {
-          avartar: "",
+          avartar: GloytaNathalang,
           content:
             "Gloyta Nathalang | Executive Vice President, Corporate Sustainability, Branding and Communication - Bangchak Corporation Public Company Limited",
         },
         {
-          avartar: "",
+          avartar: SongpolShanmatkit,
           content:
             "Songpol Shanmatkit | CEO - TV Direct Public Company Limited",
         },
         {
-          avartar: "",
+          avartar: JakkrinTaepaisitpong,
           content:
             "Jakkrin Taepaisitpong | Executive Vice President, Social & Sustainable Development Office - Betagro Public Company Limited",
         },
       ],
       moderatedBy: [
         {
-          avartar: "",
+          avartar: DrSirikulLaukaikul,
           content: "Dr. Sirikul Laukaikul | Country Director - SB Thailand",
         },
       ],
@@ -254,7 +287,7 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
 
       lecturers: [
         {
-          avartar: "",
+          avartar: SirikhanateSakulyong,
           content: "Sirikhanate Sakulyong | SB Thailand",
         },
       ],
@@ -269,7 +302,7 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
 
       lecturers: [
         {
-          avartar: "",
+          avartar: MarcBuckley,
           content:
             "Marc Buckley | Systems Expert & Ecological Economist - UN, WEF, Inside Ideas, & ALOHAS Regenerative Foundation",
         },
@@ -285,7 +318,7 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
 
       lecturers: [
         {
-          avartar: "",
+          avartar: DarrenBeck,
           content:
             "Darren Beck | Vice President, Membership & International - SB Worldwide",
         },
@@ -301,7 +334,7 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
 
       lecturers: [
         {
-          avartar: "",
+          avartar: ThomasKloster,
           content:
             "Thomas Kolster | Speaker, Author, Marketing Activist and Purpose Pioneer - Goodvertising",
         },
@@ -326,7 +359,7 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
 
       lecturers: [
         {
-          avartar: "",
+          avartar: JennyAndersson,
           content: "Jenny Andersson | Founder - Really Regenerative CIC",
         },
       ],
@@ -340,29 +373,29 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
       periodThird: "13.30 - 14.30 (Japan/Korea, UTC +9:00)",
       lecturers: [
         {
-          avartar: "",
+          avartar: NongchanokStananonth,
           content:
             "Nongchanok Stananonth | General Manager - The Coffee Club Thailand",
         },
         {
-          avartar: "",
+          avartar: KyungKonKo,
           content:
             "Kyung-Kon Ko | President & CEO - Daejeon Tourism Organization (DJTO)",
         },
         {
-          avartar: "",
+          avartar: AkiraMitsumasu,
           content:
             "Akira Mitsumasu | Vice President, Global CX & Marketing, CX, Data Analytics & Marketing - Japan Airlines",
         },
         {
-          avartar: "",
+          avartar: MohamedAdamWeeAbdullah,
           content:
             "Mohamed Adam Wee Abdullah | CMO - Manulife Insurance Berhad",
         },
       ],
       moderatedBy: [
         {
-          avartar: "",
+          avartar: AndyWilson,
           content: "Andy Wilson | Senior Partner - Ogilvy",
         },
       ],
@@ -386,7 +419,7 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
 
       lecturers: [
         {
-          avartar: "",
+          avartar: DrDangjaithawinAnantachai,
           content:
             "Dr. Dangjaithawin Anantachai | Managing Director & COO - INTAGE Thailand, SB Thailand",
         },
@@ -401,20 +434,20 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
       periodThird: "16.15 - 16.30 (Japan/Korea, UTC +9:00)",
       lecturers: [
         {
-          avartar: "",
+          avartar: DrSirikulLaukaikul,
           content: "Dr. Sirikul Laukaikul | Country Director - SB Thailand",
         },
         {
-          avartar: "",
+          avartar: YukiMatsumoto,
           content:
             "Yuki Matsumoto | International Council of SB Advisory Board Members - SB Japan",
         },
         {
-          avartar: "",
+          avartar: MinGuJun,
           content: "MinGu Jun | Country Director - SB Korea",
         },
         {
-          avartar: "",
+          avartar: GeraldMiranda,
           content: "Gerald Miranda | Country Director - SB Malaysia",
         },
       ],
@@ -426,22 +459,22 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
       periodFirst: "14.30 - 17.30 (Thailand, UTC +7:00)",
       periodSecond: "15.15- 15.30 (Malaysia, UTC +8:00)",
       periodThird: "16.15 - 16.30 (Japan/Korea, UTC +9:00)",
-      specialContent: {
-        content: "Thailand : The Sustainable Consumer Persona Workshop :",
+      extraContent: {
+        content: "Thailand : The Sustainable Consumer Persona Workshop",
         content1: "Objective : To Develop Persona of Thai Sustainable Consumer",
         content2: "Participant : 40 by Invitation",
       },
       lecturers: [
         {
-          avartar: "",
+          avartar: DrSirikulLaukaikul,
           content: "Dr. Sirikul Laukaikul | Country Director - SB Thailand",
         },
         {
-          avartar: "",
+          avartar: KanitaTungwarapojwitan,
           content: "Kanita Tungwarapojwitan | SB Thailand",
         },
         {
-          avartar: "",
+          avartar: DrDangjaithawinAnantachai,
           content:
             "Dr. Dangjaithawin Anantachai | Managing Director & COO - INTAGE Thailand",
         },
