@@ -13,7 +13,7 @@
   top: 0;
   border-bottom: 2px solid #1e7a92;
   box-shadow: 0 0 2px 1px #a9a9a9;
-  z-index: 100;
+  z-index: 2;
 }
 
 .navbar-header-md {
@@ -26,7 +26,7 @@
   top: 0;
   border-bottom: 2px solid #1e7a92;
   box-shadow: 0 0 2px 1px #a9a9a9;
-  z-index: 100;
+  z-index: 2;
 }
 
 .logo-container {
@@ -62,14 +62,14 @@
   column-gap: 3rem;
 }
 
-a.link {
+.navbar-header-bottom a.link {
   color: #fff;
 }
-a:hover {
+.navbar-header-bottom a:hover {
   color: #0056b3;
 }
 
-a:focus {
+.navbar-header-bottom a:focus {
   color: #8a2bc8;
 }
 
@@ -77,22 +77,21 @@ a:focus {
   color: #8a2bc8;
 }
 
-div .hamburger-react {
-  margin-right: 4rem;
-}
-
 .menu-overlay {
-  transition: width 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  row-gap: 20px;
+  transition: left 0.5s ease-out;
   position: fixed; /* Sit on top of the page content */
-  visibility: hidden; /* Hidden by default */
-  width: 40%; /* Full width (cover the whole page) */
+  visibility: hidden;
+  max-width: 200px;
   height: 100%; /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #fff; /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
 }
 
@@ -104,9 +103,11 @@ div .hamburger-react {
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-.menu-link-overlay {
+.menu-link-overlay,
+.link {
   display: flex;
   flex-direction: column;
+  color: #397890;
 }
 
 @media only screen and (max-width: 768px) {
@@ -115,6 +116,10 @@ div .hamburger-react {
   }
 
   .navbar-header-sm {
+    visibility: visible;
+  }
+
+  .menu-overlay {
     visibility: visible;
   }
 

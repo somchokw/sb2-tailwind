@@ -1,6 +1,7 @@
-@import "../theme/Navbar.css";
 @import "../theme//layout.css";
 @import "../theme//Home.css";
+@import "../theme/Navbar.css";
+@import "../theme//Agenda.css";
 @font-face {
   font-family: "Montserrat";
   src: url("../static/fonts/Montserrat-Regular.ttf") format("truetype");

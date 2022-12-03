@@ -9,10 +9,9 @@ import useOnClickOutside from "./utils/useOnClickOutside";
 export const Navbar: React.FC<{}> = () => {
   const location = useLocation();
   const ref = React.useRef() as any;
-  const [isOpen, setOpen] = React.useState(false);
-  const [isModalOpen, setModalOpen] = React.useState(false);
-
-  useOnClickOutside(ref, () => setOpen(false));
+  const [isOpen, setIsOpen] = React.useState(false);
+  useOnClickOutside(ref, () => setIsOpen(false));
+  console.log({ isOpen });
 
   const paths = exportPaths(location.pathname);
 
@@ -21,12 +20,21 @@ export const Navbar: React.FC<{}> = () => {
       <div
         ref={ref}
         className="menu-overlay"
-        style={{ visibility: isOpen ? "visible" : "hidden" }}
+        style={{
+          left: isOpen ? "0px" : "-200px",
+        }}
       >
         <div className="menu-overlay-content">
+          <img src={logo} alt="logo" style={{ padding: "1rem" }} />
+
           <div className="menu-link-overlay">
             {paths.map((item: any) => (
-              <Link key={item.label} to={item.path} className={item.className}>
+              <Link
+                key={item.label}
+                to={item.path}
+                className={item.className}
+                style={{ marginTop: "12px" }}
+              >
                 {item.label}
               </Link>
             ))}
@@ -39,7 +47,7 @@ export const Navbar: React.FC<{}> = () => {
           <img src={logo} alt="logo" />
         </div>
         <div ref={ref}>
-          <Hamburger toggled={isOpen} toggle={setOpen} size={20} />
+          <Hamburger toggled={isOpen} toggle={setIsOpen} size={20} />
         </div>
       </div>
 
