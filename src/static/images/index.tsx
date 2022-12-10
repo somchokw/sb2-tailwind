@@ -77,3 +77,4 @@ export { default as VenusAsavasitthithavorn } from "./VenusAsavasitthithavorn.pn
 export { default as YKPark } from "./YKPark.png";
 export { default as YukiMatsumoto } from "./YukiMatsumoto.png";
 export { default as SirikhanateSakulyong } from "./SirikhanateSakulyong.png";
+export { default as asset9small } from "./asset9small.png";

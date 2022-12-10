@@ -519,7 +519,11 @@ export const exportAgendaData = (day: any, filterLabel: string) => {
   }
 
   if (filterLabel) {
-    result = result.filter((item: any) => item.label.includes(filterLabel));
+    result = result.filter(
+      (item: any) =>
+        item.label &&
+        item.label.toLowerCase().includes(filterLabel.toLowerCase())
+    );
   }
 
   return result;

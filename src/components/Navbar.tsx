@@ -17,12 +17,11 @@ export const Navbar: React.FC<{}> = () => {
   const paths = exportPaths(pathname[1]);
 
   return (
-    <div className="nav-header-content">
+    <div className="nav-header-content" ref={ref}>
       <div
-        ref={ref}
         className="menu-overlay"
         style={{
-          left: isOpen ? "0px" : "-200px",
+          left: isOpen ? "0px" : "-250px",
         }}
       >
         <div className="menu-overlay-content">
@@ -34,7 +33,8 @@ export const Navbar: React.FC<{}> = () => {
                 key={item.label}
                 to={item.path}
                 className={item.className}
-                style={{ marginTop: "12px" }}
+                style={{ marginTop: "12px", fontSize: "24px", fontWeight: 300 }}
+                onClick={() => setIsOpen(false)}
               >
                 {item.label}
               </Link>
@@ -52,8 +52,8 @@ export const Navbar: React.FC<{}> = () => {
         </div>
       </div>
 
-      <div className="navbar-header-md">
-        <div className="navbar-container">
+      <div ref={ref} className="navbar-header-md">
+        <div ref={ref} className="navbar-container">
           <div className="logo-container">
             <img src={logo} alt="logo" />
           </div>
