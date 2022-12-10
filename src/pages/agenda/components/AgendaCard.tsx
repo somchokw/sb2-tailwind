@@ -1,5 +1,4 @@
 import React from "react";
-import { AkiraMitsumasu } from "../../../static/images";
 
 interface AgendaCardProps {
   data: any;
@@ -12,7 +11,7 @@ export const AgendaCard: React.FC<AgendaCardProps> = (
   const { data, filterDay } = props;
 
   return (
-    <>
+    <div>
       {data?.length ? (
         data
           .filter((item: any, index: any) => item.day === filterDay)
@@ -35,19 +34,18 @@ export const AgendaCard: React.FC<AgendaCardProps> = (
                   {item.extraContent?.content2}
                 </p>
               </div>
-              <div>
-                <p>
-                  {item.specialContent?.content}
-                  <a
-                    className="hyperlink-agenda"
-                    href={item.specialContent?.link}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    {item.specialContent?.link}
-                  </a>
-                </p>
-              </div>
+
+              <p>
+                {item.specialContent?.content}
+                <a
+                  className="hyperlink-agenda"
+                  href={item.specialContent?.link}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {item.specialContent?.link}
+                </a>
+              </p>
 
               {item.lecturers.map((lec: any, index: any) => (
                 <div key={`lec-${filterDay}-${index}`} className="row-avartar">
@@ -105,7 +103,7 @@ export const AgendaCard: React.FC<AgendaCardProps> = (
       ) : (
         <></>
       )}
-    </>
+    </div>
   );
 };
 

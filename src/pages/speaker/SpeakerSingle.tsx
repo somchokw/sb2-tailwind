@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-import React from "react";
 import { useParams } from "react-router-dom";
 
 import avatar from "./avatar";
@@ -11,11 +9,15 @@ export const SpeakerSingle = () => {
   const describeVar = avatar.avatar[indexAvatar].describe ?? null;
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center pb-10">
       <div className="w-2/3 flex flex-col items-center ">
         <div className="mt-4 w-full flex flex-col items-center">
           <div>
-            <img src={avatar.avatar[indexAvatar].image} width="240px" />
+            <img
+              alt="avatar"
+              src={avatar.avatar[indexAvatar].image}
+              width="240px"
+            />
           </div>
           <div className="text-center">
             <h1 className="text-2.5xl font-bold mb-3">
