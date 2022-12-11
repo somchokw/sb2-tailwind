@@ -10,10 +10,10 @@ export const HomeContent4 = () => {
   return (
     <div className="bg-dark-blue ">
       <div className="flex flex-col items-center">
-        <div className="mt-12 flex flex-col justify-center w-full md:w-2/3 ">
-          <div className="flex flex-row">
-            <img alt="logo" src={logo} className="w-1/2" />
-            <h1 className="font-medium text-white w-2/3 ml-4 lg:text-4xl">
+        <div className="mt-12 flex flex-col justify-center items-center w-full md:w-10/12 lg:w-10/12 ">
+          <div className="flex flex-row justify-center items-center">
+            <img alt="logo" src={logo} className="w-3/12" />
+            <h1 className="font-medium text-white w-9/12 ml-4 lg:text-4xl">
               Is organized through the collaboration of
             </h1>
           </div>
@@ -57,12 +57,12 @@ export const HomeContent4 = () => {
           </div>
           <div className="border-b-1px border-lightPink w-3/5 "></div>
         </div>
-        <div className="flex mt-5 md:mt-12">
-          <div className="w-4/12 -ml-4 pr-4 hidden md:flex justify-end items-center bg-white rounded-tr-30px rounded-br-30px h-60">
+        <div className="flex mt-5 md:mt-12 mb-8">
+          <div className="w-4/12 -ml-4 pr-2 pt-5 hidden md:flex justify-end items-start bg-white rounded-tr-30px rounded-br-30px h-52">
             <img alt="brands2" src={brands2} width="50%" />
           </div>
-          <div className="w-full p-4 text-center md:text-start md:w-1/2">
-            <p className="font-normal text-[18px] text-white md:text-xl">
+          <div className="w-full px-6  text-center md:text-start md:w-7/12 lg:w-7/12">
+            <p className="font-normal text-[18px] text-white md:text-[18px] lg:text-[18px] ">
               Sustainable Brands is the world’s leading community of innovators
               for brands that are designing the future of the business world.
               Since 2006, its mission has been to inspire, engage, and equip
@@ -74,7 +74,7 @@ export const HomeContent4 = () => {
               the year.
             </p>
             <div className="my-2"></div>
-            <p className="font-normal text-[18px] text-white md:text-xl">
+            <p className="font-normal text-[18px] text-white md:text-[18px] lg:text-[18px]">
               Sustainable Brands is a subsidiary of Sustainable Life Media whose
               headquarters are located in California, USA
             </p>

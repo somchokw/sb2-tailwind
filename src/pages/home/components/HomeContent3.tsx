@@ -33,7 +33,7 @@ export const HomeContent3 = () => {
               <img alt="pic" src={picture} width="130px" />
 
               <p className="text-white text-xl font-bold mb-3 ">{header}</p>
-              <p className="text-white">{detail}</p>
+              <p className="text-white text-l font-normal  ">{detail}</p>
             </div>
           </div>
         );
@@ -44,7 +44,7 @@ export const HomeContent3 = () => {
               <img alt="pic" src={picture} width="130px" />
 
               <p className="text-white text-xl font-bold mb-3 ">{header}</p>
-              <p className="text-white">{detail}</p>
+              <p className="text-white text-l font-normal">{detail}</p>
             </div>
           </div>
         );
@@ -55,7 +55,7 @@ export const HomeContent3 = () => {
               <img alt="pic" src={picture} width="130px" />
 
               <p className="text-white text-xl font-bold mb-3 ">{header}</p>
-              <p className="text-white">{detail}</p>
+              <p className="text-white text-l font-normal">{detail}</p>
             </div>
           </div>
         );
@@ -73,15 +73,17 @@ export const HomeContent3 = () => {
     position3: string
   ) => {
     return (
-      <div className="text-center flex flex-col items-center px-4 ">
+      <div className="text-center flex flex-col items-center px-2 ">
         <div>
-          <img alt="avatar" src={avatar} style={{ minWidth: "220px" }} />
+          <img alt="avatar" src={avatar} style={{ minWidth: "180px" }} />
         </div>
         <div style={{ minWidth: "300px", marginTop: "12px" }}>
           <h1 className="text-xl font-bold mb-3">{name}</h1>
-          <p className="text-xs text-green ">{position1}</p>
-          <p className="text-xs text-green">{position2}</p>
-          {position3 ? <p className="text-xs text-green">{position3}</p> : null}
+          <p className="text-xs font-normal  ">{position1}</p>
+          <p className="text-xs font-normal ">{position2}</p>
+          {position3 ? (
+            <p className="text-xs font-normal ">{position3}</p>
+          ) : null}
         </div>
       </div>
     );
@@ -90,13 +92,13 @@ export const HomeContent3 = () => {
   return (
     <>
       {" "}
-      <div className="sm:w-full md:2/3">
+      <div className="sm:w-full md:w-10/12 lg:w-10/12">
         <p className="text-green font-semibold text-center text-2xl md:text-4xl">
           Learn about how brands can release the desirable behaviors that will
           lead to sustainable future
         </p>
       </div>
-      <div className="mt-10 text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+      <div className="mt-10 text-center sm:w-full md:w-11/12 lg:w-11/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         <p className="text-2xl font-bold text-green hidden lg:block">
           ADDRESS CLIMATE CRISIS
         </p>
@@ -180,7 +182,7 @@ export const HomeContent3 = () => {
           )}
         </div>
       </div>
-      <div className="mt-20 flex flex-col items-center">
+      <div className="mt-20 flex flex-col items-center sm:w-full md:w-11/12 lg:w-11/12 ">
         <h1 className="text-54px font-bold text-green ">SPEAKERS</h1>
         <div className="border-b-1px my-1 w-1/2 border-green "></div>
         <div

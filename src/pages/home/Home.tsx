@@ -18,7 +18,7 @@ export const Home = () => {
         />
         <div className="absolute z-2 flex-col w-[200px] md:w-1/2 lg:w-30rem ">
           <img alt="header" src={header} />
-          <button className="w-full mt-1 py-4 rounded-4xl bg-lightPink hover:bg-green ">
+          <button className="w-full mt-1 py-2 px-6 rounded-4xl bg-lightPink hover:bg-green ">
             <div className="md:text-18px text-white font-bold lg:text-28px ">
               REGISTER NOW. FREE!
             </div>
@@ -32,7 +32,7 @@ export const Home = () => {
         <div className="mt-6 text-center">
           <button
             onClick={() => window.location.assign("/speaker")}
-            className="font-bold bg-green text-white rounded-37px text-center p-4 sm:text-[28px]"
+            className="font-bold bg-lightGreen text-white rounded-37px text-center py-2 px-10 sm:text-[28px] text-[28px]"
           >
             SEE MORE SPEAKERS
           </button>
